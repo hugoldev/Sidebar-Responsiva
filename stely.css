@@ -1,0 +1,117 @@
+ *{
+    box-sizing: border-box;
+ }
+
+
+ body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1f1f1f;
+    color: #fff; 
+ }
+
+ .border{
+    border: 1px solid red;
+ }
+
+ .sidebar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 160px;
+    height: 100%;
+    padding: 40px 8px 30px 8px;
+    border-right: 1px solid #2f3336;
+    transition: all 0.35s;
+ }
+
+ .sidebar-header{
+    width: 100%;
+    margin-bottom: 16px;
+ }
+
+ .logo-img{
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 10px;
+ }
+
+ .logo-img:hover{
+    transform: scale(1.5);
+ }
+
+ .sidebar button{
+    height: 60px;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+ }
+
+ .sidebar button > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;  
+    height: 46px;
+    padding: 0 20px 0 19px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+ }
+
+ .sidebar button:hover > span {
+    background: rgba(255, 255, 255, 0.07);
+ }
+
+ .sidebar button i {
+    position: relative;
+    font-size: 25px;
+    transition: 0.2s;
+ }
+
+ .sidebar button span{
+    font-size: 13px;
+ }
+
+ .sidebar > nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+ }
+
+ .main{
+   margin-left: 170px;
+   margin-right: 6px;
+   overflow: hidden; 
+ }
+ 
+
+ /* Ajustando sidebar com apenas os icones */
+ @media (max-width: 850px){
+    .sidebar{ 
+    width: 84px;
+    }
+
+    .sidebar button > span{
+      width: 63px;
+    }
+
+    .sidebar button > span > span{
+      opacity: 0;
+      content: hidden;
+   }
+
+    .main{
+      margin-left: 82px;
+      transition: margin 0.3s;
+    }
+}
