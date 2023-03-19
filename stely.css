@@ -93,12 +93,20 @@
    margin-right: 6px;
    overflow: hidden; 
  }
- 
+
+ .btn-sidebar-icon {
+     display: none;
+ }
+
+ .button-mobile {
+   display: none;
+ }
 
  /* Ajustando sidebar com apenas os icones */
  @media (max-width: 850px){
     .sidebar{ 
     width: 84px;
+    
     }
 
     .sidebar button > span{
@@ -114,4 +122,59 @@
       margin-left: 82px;
       transition: margin 0.3s;
     }
+
+    .button-mobile {
+      display: none;
+    }
+}
+
+.menu-mobile {
+   display: none;
+   margin-left: -100vw;
+}
+
+.menu-mobile-active {
+   position: absolute;
+   display: grid;
+   top: 0;
+   background-color: #626465;
+   height: 100%;
+   width: 35vw;
+   padding: 1em;
+   animation-duration: 3s;
+   margin-left: -1vw;
+}
+
+@keyframes showSidebar {
+   from {margin-left: -100vw;}
+   top {margin-left: -1vw;}
+}
+
+@media (max-width: 574px){
+   .sidebar{
+      display: none;
+   }
+
+   .menu-mobile {
+      display: flex;
+   }
+
+   .main {
+      margin-left: 6px;
+   }
+   
+   .button-mobile {
+      display: flex;
+      height: 60px;
+      background: transparent;
+      border: 0;
+      font-family: inherit;
+      color: inherit;
+      cursor: pointer;
+      text-align: center;
+      padding: 0;
+      color:#fff;
+      margin: 1;
+      
+   }
 }
