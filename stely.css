@@ -102,6 +102,10 @@
    display: none;
  }
 
+ .showSidebar {
+   display: none;
+}
+
  /* Ajustando sidebar com apenas os icones */
  @media (max-width: 850px){
     .sidebar{ 
@@ -123,31 +127,6 @@
       transition: margin 0.3s;
     }
 
-    .button-mobile {
-      display: none;
-    }
-}
-
-.menu-mobile {
-   display: none;
-   margin-left: -100vw;
-}
-
-.menu-mobile-active {
-   position: absolute;
-   display: grid;
-   top: 0;
-   background-color: #626465;
-   height: 100%;
-   width: 35vw;
-   padding: 1em;
-   animation-duration: 3s;
-   margin-left: -1vw;
-}
-
-@keyframes showSidebar {
-   from {margin-left: -100vw;}
-   top {margin-left: -1vw;}
 }
 
 @media (max-width: 574px){
@@ -155,12 +134,8 @@
       display: none;
    }
 
-   .menu-mobile {
-      display: flex;
-   }
-
    .main {
-      margin-left: 6px;
+      margin-left: 20px;
    }
    
    .button-mobile {
@@ -174,7 +149,49 @@
       text-align: center;
       padding: 0;
       color:#fff;
-      margin: 1;
+      margin: 10px 15px 20px 33px;
       
+   }
+
+   .mobile-text{
+      margin: 25px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 15px;
+      color: #fff;
+      border: 0px;
+   }
+
+   .button-close {
+      background-color: transparent;
+      border: 0;
+      color: #fff;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px 30px;
+      cursor: pointer;
+      
+   }
+
+   .showSidebar {
+      position: absolute;
+      flex-direction: column;
+      display: block;
+      top: 0;
+      background-color: #2f3336;
+      height: 100%;
+      width: 25%;
+      border: 0;
+      padding: 30px;
+      animation-duration: 0.5s;
+      margin-left: -100vw;   
+      z-index: 2;   
+   }
+
+   @keyframes showSidebar {
+      from {margin-left: -100vw;}
+      top {margin-left: -1vw;}
    }
 }

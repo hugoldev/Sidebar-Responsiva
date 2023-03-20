@@ -17,7 +17,7 @@
 <body>
 
     <aside class="sidebar">
-         <header class="sidebar-header">
+         <header class="sidebar-header" id="sidebar-header">
             <img class="logo-img" src="./img/foto usuario" alt="Foto de usuário">
          </header>   
 
@@ -57,57 +57,40 @@
 
     <!-- Criando Menu mobile-->
     
-    <div>
+    <div class="navigationHeader" id="navigationHeader">
 
-        <button class="button-mobile" onclick="toggleMenu()">
-            <span>
+        <button class="button-mobile" onclick="toggleSidebar()">
                 <i class="material-symbols-outlined">menu</i>
-                <span></span>
-            </span>
         </button>
 
-    <nav class="menu-mobile" id="menu-mobile">
-        <button onclick="toggleMenu()">
-            <span>
+    <nav class="showSidebar" id="showSidebar">
+        <div class="header" id="header">
+        <button class="button-close" onclick="toggleSidebar()">
                 <i class="material-symbols-outlined">close</i>
-                <span></span>
-            </span>
         </button>
 
-        <button>
-            <span>
-                <i class="material-symbols-outlined"> home </i>
+        <a href="">
                 <span class="mobile-text">Home</span>
-            </span>
-        </button>
+        </a>
          
-        <button>
-            <span>
-                <i class="material-symbols-outlined"> tag </i>
-                <span class="mobile-text">Explorar</span>
-            </span>
-        </button>
+        <a href="">
+            <span class="mobile-text">Explorar</span>
+        </a>
         
-        <button>
-            <span>
-                <i class="material-symbols-outlined"> email </i>
-                <span class="mobile-text">Mensagens</span>
-            </span>
-        </button>
+        <a href="">
+            <span class="mobile-text">Mensagens</span>
+        </a>
 
-        <button>
-            <span>
-                <i class="material-symbols-outlined"> person </i>
-                <span class="mobile-text">Profile</span>
-            </span>
-        </button> 
-
+        <a href="">
+            <span class="mobile-text">Profile</span>
+        </a> 
+        </div>
      </div>
 
     </nav>
 
-    <main class="main">
-        <h1></h1>
+    <main tabindex="0" onclick="closeSidebar()" class="main" id="main">
+        <h1>Hello Word</h1>
     </main>
 
     <script src="script.js"></script>
