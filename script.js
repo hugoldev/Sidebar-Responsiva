@@ -25,9 +25,3 @@ function closeSidebar(){
     }
 
 }
-
-window.addEventListener('resize', function(event)) {
-    if(window.innerWidth > 574 && showSidebar){
-        toggleSidebar();
-    }
-}

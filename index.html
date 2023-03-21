@@ -16,83 +16,85 @@
 </head>
 <body>
 
-    <aside class="sidebar">
-         <header class="sidebar-header" id="sidebar-header">
-            <img class="logo-img" src="./img/foto usuario" alt="Foto de usuário">
-         </header>   
+        <aside class="sidebar">
+            <header class="sidebar-header" id="sidebar-header">
+                <img class="logo-img" src="./img/foto usuario" alt="Foto de usuário">
+            </header>   
 
-         <nav>
-            <button>
-                <span>
-                    <i class="material-symbols-outlined"> home </i>
-                    <span>Home</span>
-                </span>
-            </button>
-             
-            <button>
-                <span>
-                    <i class="material-symbols-outlined"> tag </i>
-                    <span>Explorar</span>
-                </span>
-            </button>
+            <nav>
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined"> home </i>
+                        <span>Home</span>
+                    </span>
+                </button>
+                
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined"> tag </i>
+                        <span>Explorar</span>
+                    </span>
+                </button>
+                
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined"> email </i>
+                        <span>Mensagens</span>
+                    </span>
+                </button>
+
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined"> person </i>
+                        <span>Profile</span>
+                    </span>
+                </button>    
+
+            </nav>
+
             
-            <button>
-                <span>
-                    <i class="material-symbols-outlined"> email </i>
-                    <span>Mensagens</span>
-                </span>
+        </aside>
+
+        <!-- Criando Menu mobile-->
+        
+        <div class="navigationHeader" id="navigationHeader">
+
+            <button class="button-mobile" onclick="toggleSidebar()">
+                    <i class="material-symbols-outlined">menu</i>
             </button>
 
-            <button>
-                <span>
-                    <i class="material-symbols-outlined"> person </i>
-                    <span>Profile</span>
-                </span>
-            </button>    
+        <nav class="showSidebar" id="showSidebar">
+            <div class="header" id="header">
+            <button class="button-close" onclick="toggleSidebar()">
+                    <i class="material-symbols-outlined">close</i>
+            </button>
 
-         </nav>
+            <a href="">
+                    <span class="mobile-text">Home</span>
+            </a>
+            
+            <a href="">
+                <span class="mobile-text">Explorar</span>
+            </a>
+            
+            <a href="">
+                <span class="mobile-text">Mensagens</span>
+            </a>
 
-         
-    </aside>
-
-    <!-- Criando Menu mobile-->
-    
-    <div class="navigationHeader" id="navigationHeader">
-
-        <button class="button-mobile" onclick="toggleSidebar()">
-                <i class="material-symbols-outlined">menu</i>
-        </button>
-
-    <nav class="showSidebar" id="showSidebar">
-        <div class="header" id="header">
-        <button class="button-close" onclick="toggleSidebar()">
-                <i class="material-symbols-outlined">close</i>
-        </button>
-
-        <a href="">
-                <span class="mobile-text">Home</span>
-        </a>
-         
-        <a href="">
-            <span class="mobile-text">Explorar</span>
-        </a>
-        
-        <a href="">
-            <span class="mobile-text">Mensagens</span>
-        </a>
-
-        <a href="">
-            <span class="mobile-text">Profile</span>
-        </a> 
+            <a href="">
+                <span class="mobile-text">Profile</span>
+            </a> 
+            </div>
         </div>
-     </div>
 
-    </nav>
-
+        </nav>
     <main tabindex="0" onclick="closeSidebar()" class="main" id="main">
         <h1>Hello Word</h1>
+        <p>Olá, meu nome é Hugo, e sou um entusiasta da tecnologia com uma grande paixão por desenvolvimento de software. Eu tenho buscado incansavelmente aprimorar minhas habilidades e conhecimentos nessa área e estou animado para buscar uma vaga como desenvolvedor.</p>
+        <p>Desde a minha adolescência, tenho me interessado por tecnologia, programação e design. Eu adoro a criatividade que a programação oferece e a capacidade de criar soluções para problemas complexos. Minha curiosidade e dedicação me levaram a aprofundar meu conhecimento em linguagens de programação, frameworks, banco de dados e outras tecnologias necessárias para construir aplicativos web de alta qualidade.</p>
+        <p>Eu gosto de trabalhar em equipe e acredito que a colaboração é essencial para o sucesso de um projeto. Tenho experiência em HTML, CSS e JavaScript, bem como em desenvolvimento de front-end ou back-end.</p>
+        <p>Estou animado para trabalhar em uma equipe de desenvolvimento e aprender com profissionais experientes. Eu sou uma pessoa pró-ativa, responsável e comprometida, sempre em busca de novos desafios e oportunidades de aprendizado. Estou confiante de que posso contribuir significativamente para qualquer equipe de desenvolvimento e estou empolgado para compartilhar minhas habilidades e paixão pela tecnologia.</p>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
