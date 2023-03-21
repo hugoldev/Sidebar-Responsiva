@@ -9,10 +9,10 @@ function toggleSidebar() {
     if(showSidebar){
         element.style.marginLeft = '-1vw';
         element.style.animationName = 'showSidebar';
-        main.style.filter = 'blur(1px)';
+        main.style.filter = 'blur(0.2px)';
     }
     else {
-        element.style.marginLeft = '-100vw';
+        element.style.marginLeft = '-30vw';
         element.style.animationName = '';
         main.style.filter = '';
     }
@@ -23,5 +23,4 @@ function closeSidebar(){
     if(showSidebar){
         toggleSidebar();
     }
-
 }

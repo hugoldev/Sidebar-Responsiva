@@ -17,7 +17,7 @@
     color: #fff; 
     background-image: linear-gradient(to left, black, #7C3AFD, #4034E3, #476CFA, #3AC7FD);
     background-size: 500% 100%;
-    animation: animated-gradient 60s infinite alternate;
+    animation: animated-gradient s infinite alternate;
  }
 
  .border{
@@ -36,6 +36,7 @@
     border-right: 1px solid #2f3336;
     transition: all 0.35s;
     background-color: #1f1a31;
+    box-shadow: 0 8px 16px 9px #32325d40;
  }
 
  .sidebar-header{
@@ -118,14 +119,14 @@
    line-height: 120px;
    text-align: center;
 
-   float: center;  margin: 40px;
+   float: center;  
+   margin: 40px;
    
  }
 
  p {
    margin-right: 60px;
    border-radius: 20px;
-
    text-align: justify;
    display: inline-block;
    vertical-align: top;
@@ -140,6 +141,7 @@
    padding: 30px;
    border: 1px;
    background-color: rgba(24, 30, 70, 0.5);
+   box-shadow: 0 13px 27px -5px #32325d40,0 8px 16px -8px #0000004d,0 -6px 16px -6px #00000008;
 }
 
  .btn-sidebar-icon {
@@ -226,18 +228,15 @@
       display: block;
       top: 0;
       background-color: #1f1a31;
-      height: 100%;
+      height: 250%;
       width: 25%;
       border: 0;
       padding: 30px;
-      animation-duration: 0.5s;
-      margin-left: -100vw;   
-      z-index: 2;   
-   }
-
-   @keyframes showSidebar {
-      from {margin-left: -100vw;}
-      top {margin-left: -1vw;}
+      
+      margin-left: -30vw;   
+      z-index: 2;  
+      box-shadow: 0 8px 16px 8px #0000004d; 
+      transition: 0.5s linear;
    }
 }
 
