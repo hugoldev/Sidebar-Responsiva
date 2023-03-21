@@ -23,5 +23,4 @@ function closeSidebar(){
     if(showSidebar){
         toggleSidebar();
     }
-
 }
