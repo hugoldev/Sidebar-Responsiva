@@ -15,7 +15,7 @@
     margin: 0;
     font-family: sans-serif;
     color: #fff; 
-    background-image: linear-gradient(to left, black, #7C3AFD, #4034E3, #476CFA, #3AC7FD);
+    background-image: linear-gradient(230deg, #7C3AFD, #4034E3, #476CFA, #3AC7FD, #7C3AFD);
     background-size: 500% 100%;
     animation: animated-gradient s infinite alternate;
  }
@@ -37,6 +37,7 @@
     transition: all 0.35s;
     background-color: #1f1a31;
     box-shadow: 0 8px 16px 9px #32325d40;
+    opacity: 0.975;
  }
 
  .sidebar-header{
@@ -106,19 +107,16 @@
    margin-right: 6px;
    overflow: hidden; 
    color: #fff;
-
  }
 
  h1 {
    font-weight: 400;
    font-size: 64px;
    line-height: 120px;
-
    font-weight: 400;
    font-size: 64px;
    line-height: 120px;
    text-align: center;
-
    float: center;  
    margin: 40px;
    
@@ -126,20 +124,18 @@
 
  p {
    margin-right: 60px;
-   border-radius: 20px;
+   border-radius: 23px;
    text-align: justify;
    display: inline-block;
-   vertical-align: top;
-
    font-weight: 500;
    font-size: 18px;
-   line-height: 30px;
-   margin-bottom: 72px;   
-   margin: 14px;
-
+   line-height: 30px; 
+   margin: 8px;
    text-indent: 20px;
    padding: 30px;
-   border: 1px;
+   border: solid;
+   border-width: 1px;
+   border-color: rgba(24, 30, 70, 0.1);
    background-color: rgba(24, 30, 70, 0.5);
    box-shadow: 0 13px 27px -5px #32325d40,0 8px 16px -8px #0000004d,0 -6px 16px -6px #00000008;
 }
@@ -160,6 +156,7 @@
  @media (max-width: 850px){
     .sidebar{ 
     width: 84px;
+    
     
     }
 
@@ -237,6 +234,8 @@
       z-index: 2;  
       box-shadow: 0 8px 16px 8px #0000004d; 
       transition: 0.5s linear;
+      opacity: 0.975;
    }
+   
 }
 
