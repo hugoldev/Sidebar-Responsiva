@@ -12,7 +12,7 @@ function toggleSidebar() {
         main.style.filter = 'blur(0.2px)';
     }
     else {
-        element.style.marginLeft = '-30vw';
+        element.style.marginLeft = '-40vw';
         element.style.animationName = '';
         main.style.filter = '';
     }
